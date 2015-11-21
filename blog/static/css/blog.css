@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+	padding: 24px;
+}
+
+a {
+	color: #1975d1;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+.date {
+	color: rgba(33,33,33,0.4);
+	font-size: 12px;
+}
