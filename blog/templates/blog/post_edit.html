@@ -11,7 +11,10 @@
             <h1 class="main-title">Новый пост</h1>
             <form method="POST" class="post-form">{% csrf_token %}
                 {{ form.as_p }}
-                <input type="submit" class="btn-style" value="Сохранить">
+                <div class="center">
+                    <a class="btn-style btn-float" href='{% url "post_list" %}'>На главную</a>
+                    <input type="submit" class="btn-style" value="Сохранить">
+                </div> 
             </form>
         </div>
     </body>

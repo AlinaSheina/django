@@ -16,6 +16,11 @@ body {
 	background: #fff;
 }
 
+.center {
+	display: table;
+	margin: 0 auto;
+}
+
 a {
 	color: #1975d1;
 	text-decoration: none;
@@ -98,4 +103,10 @@ input:focus, textarea:focus {
     background: -ms-linear-gradient(top,#2e80d1 0%,#0d48a1 100%);
     background: linear-gradient(to bottom,#2e80d1 0%,#0d48a1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e80d1',endColorstr='#0d48a1',GradientType=0);
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.05) inset;;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.05) inset;
+}
+
+.btn-float {
+	float: left;
+	margin-right: 12px;
+}
