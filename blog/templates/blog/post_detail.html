@@ -1,7 +1,20 @@
-<div class="post">
-    <div class="date">
-        {{ post.published_date }}
-    </div>
-    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaks }}</p>
-</div>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="post">   
+			    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+			    <p>{{ post.text|linebreaks }}</p>
+			    <div class="date">
+			        {{ post.published_date }}
+			    </div>
+			    <a class="btn-style" href='{% url "post_list" %}'>На главную</a>
+			</div>
+        </div>
+    </body>
+</html>
