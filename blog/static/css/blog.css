@@ -110,3 +110,16 @@ input:focus, textarea:focus {
 	float: left;
 	margin-right: 12px;
 }
+
+.show-more-text {
+    height: 70px;
+    overflow: hidden;
+}
+
+.auto-height {
+	height: auto;
+}
+
+.btn-small {
+	font-size: 12px;
+}
